@@ -1,14 +1,14 @@
 DEFAULT_CONFIG = """
 [auth]
 # Google Account email address (one associated w/ your Voice account)
-email=
+email=''
 
 # Raw password used or login
-password=
+password=''
 
 [gvoice]
 # Number to place calls from (eg, your google voice number)
-forwardingNumber=
+forwardingNumber=''
 
 # Default phoneType for your forwardingNumber as defined below
 #  1 - Home
@@ -19,7 +19,7 @@ phoneType=2
 """
 
 DEBUG = False
-#LOGIN = 'https://accounts.google.com/ServiceLoginAuth?service=grandcentral'
+# LOGIN = 'https://accounts.google.com/ServiceLoginAuth?service=grandcentral'
 LOGIN = "https://accounts.google.com/ServiceLogin?service=grandcentral&passive=1209600&continue=https://www.google.com/voice&followup=https://www.google.com/voice&ltmpl=open"
 
 FEEDS = ('inbox', 'starred', 'all', 'spam', 'trash', 'voicemail', 'sms',
